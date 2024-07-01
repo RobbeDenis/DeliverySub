@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1181320396891881604}
   - component: {fileID: 5571318218411251115}
-  - component: {fileID: 6218686815721348655}
-  - component: {fileID: 3869657248884174355}
   m_Layer: 0
-  m_Name: Dynamic Sprite
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,13 +84,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6218686815721348655
+--- !u!1 &5039901331903194158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7332674993739146970}
+  - component: {fileID: 1389134883464291479}
+  - component: {fileID: 1029279752570369980}
+  - component: {fileID: 8840336807974006169}
+  m_Layer: 0
+  m_Name: Submarine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7332674993739146970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039901331903194158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1181320396891881604}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389134883464291479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039901331903194158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaf3af1f11451a438603df5b9bc0d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 100
+--- !u!61 &1029279752570369980
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3500545510651762544}
+  m_GameObject: {fileID: 5039901331903194158}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -131,22 +177,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &3869657248884174355
+--- !u!50 &8840336807974006169
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3500545510651762544}
-  m_BodyType: 1
+  m_GameObject: {fileID: 5039901331903194158}
+  m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -154,101 +200,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &5039901331903194158
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7332674993739146970}
-  - component: {fileID: 1389134883464291479}
-  m_Layer: 0
-  m_Name: Submarine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7332674993739146970
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5039901331903194158}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1181320396891881604}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1389134883464291479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5039901331903194158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdaf3af1f11451a438603df5b9bc0d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementControls:
-    m_Name: Movement Controls
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 741194dc-97dd-4655-85c0-561faee5adb4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: 67da401c-4733-4569-b2d3-1d50d04aab82
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Controls
-      m_Flags: 4
-    - m_Name: up
-      m_Id: cea0a934-51da-4d3f-ba12-a3be17b4d9de
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Controls
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 77a407d5-f106-463b-acc0-99664df79c58
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Controls
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 538feb8d-1a0b-4fba-84cd-5e889f84c420
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Controls
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 25eccd40-4d1e-4974-9d8c-f64e6a905b21
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Controls
-      m_Flags: 8
-    m_Flags: 0

@@ -35,6 +35,15 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""Value"",
+                    ""id"": ""ecec8376-a8e8-4d41-ba4d-98523848f2ea"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": ""Clamp(max=1)"",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -50,78 +59,12 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
-                    ""id"": ""9f9fcdce-6e1e-43e3-8b46-ff651c073057"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""a211c589-ff79-4d77-be99-1b7f87ed4c99"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""d9cef830-c011-40c9-9bb8-aa468e19cae7"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""right"",
-                    ""id"": ""66a2b10c-4392-4e00-8a8c-bbed1abbcf2f"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""id"": ""34315b14-f283-4705-b545-dd06cfa33406"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Arrows"",
-                    ""id"": ""d1872265-241d-4ddf-b9cd-6832e9e1aadc"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""1224c9c4-61dd-48b2-a9a1-bfe4be82cdc7"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""5d409172-b8e7-484c-bf6b-6cf44ace3f50"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""KBM"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -132,18 +75,73 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""5d409172-b8e7-484c-bf6b-6cf44ace3f50"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""1224c9c4-61dd-48b2-a9a1-bfe4be82cdc7"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9f9fcdce-6e1e-43e3-8b46-ff651c073057"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""a211c589-ff79-4d77-be99-1b7f87ed4c99"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d9cef830-c011-40c9-9bb8-aa468e19cae7"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""34315b14-f283-4705-b545-dd06cfa33406"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""id"": ""66a2b10c-4392-4e00-8a8c-bbed1abbcf2f"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""KBM"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -154,19 +152,114 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Scroll"",
+                    ""id"": ""c0f2aec8-4a75-469b-ab54-032abfc44b6d"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""370aa129-2ab8-4a2c-a37e-0dc202bd5b92"",
+                    ""path"": ""<Mouse>/scroll/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""c9671480-a507-40ff-a504-4f8fbbfa8895"",
+                    ""path"": ""<Mouse>/scroll/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right Stick"",
+                    ""id"": ""46097471-19f4-4b4e-8548-d1feb284ab1a"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""11cc0eec-8aa4-44ac-99bc-5428631fc761"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""67152c02-9949-4913-a743-818559567429"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""KBM"",
+            ""bindingGroup"": ""KBM"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Submarine
         m_Submarine = asset.FindActionMap("Submarine", throwIfNotFound: true);
         m_Submarine_Move = m_Submarine.FindAction("Move", throwIfNotFound: true);
+        m_Submarine_Zoom = m_Submarine.FindAction("Zoom", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -229,11 +322,13 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
     private readonly InputActionMap m_Submarine;
     private List<ISubmarineActions> m_SubmarineActionsCallbackInterfaces = new List<ISubmarineActions>();
     private readonly InputAction m_Submarine_Move;
+    private readonly InputAction m_Submarine_Zoom;
     public struct SubmarineActions
     {
         private @SubmarineInputActions m_Wrapper;
         public SubmarineActions(@SubmarineInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Submarine_Move;
+        public InputAction @Zoom => m_Wrapper.m_Submarine_Zoom;
         public InputActionMap Get() { return m_Wrapper.m_Submarine; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -246,6 +341,9 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+            @Zoom.started += instance.OnZoom;
+            @Zoom.performed += instance.OnZoom;
+            @Zoom.canceled += instance.OnZoom;
         }
 
         private void UnregisterCallbacks(ISubmarineActions instance)
@@ -253,6 +351,9 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+            @Zoom.started -= instance.OnZoom;
+            @Zoom.performed -= instance.OnZoom;
+            @Zoom.canceled -= instance.OnZoom;
         }
 
         public void RemoveCallbacks(ISubmarineActions instance)
@@ -270,8 +371,27 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
         }
     }
     public SubmarineActions @Submarine => new SubmarineActions(this);
+    private int m_KBMSchemeIndex = -1;
+    public InputControlScheme KBMScheme
+    {
+        get
+        {
+            if (m_KBMSchemeIndex == -1) m_KBMSchemeIndex = asset.FindControlSchemeIndex("KBM");
+            return asset.controlSchemes[m_KBMSchemeIndex];
+        }
+    }
+    private int m_GamepadSchemeIndex = -1;
+    public InputControlScheme GamepadScheme
+    {
+        get
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
+        }
+    }
     public interface ISubmarineActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnZoom(InputAction.CallbackContext context);
     }
 }
