@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181320396891881604}
   - component: {fileID: 5571318218411251115}
-  - component: {fileID: 8999891528717863057}
+  - component: {fileID: 6218686815721348655}
   - component: {fileID: 3869657248884174355}
   m_Layer: 0
   m_Name: Dynamic Sprite
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &8999891528717863057
-CircleCollider2D:
+--- !u!61 &6218686815721348655
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,8 +119,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!50 &3869657248884174355
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +139,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3500545510651762544}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -157,6 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7332674993739146970}
+  - component: {fileID: 1389134883464291479}
   m_Layer: 0
   m_Name: Submarine
   m_TagString: Untagged
@@ -180,3 +191,64 @@ Transform:
   - {fileID: 1181320396891881604}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389134883464291479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039901331903194158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaf3af1f11451a438603df5b9bc0d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementControls:
+    m_Name: Movement Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 741194dc-97dd-4655-85c0-561faee5adb4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 67da401c-4733-4569-b2d3-1d50d04aab82
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Controls
+      m_Flags: 4
+    - m_Name: up
+      m_Id: cea0a934-51da-4d3f-ba12-a3be17b4d9de
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Controls
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 77a407d5-f106-463b-acc0-99664df79c58
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Controls
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 538feb8d-1a0b-4fba-84cd-5e889f84c420
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Controls
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 25eccd40-4d1e-4974-9d8c-f64e6a905b21
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Controls
+      m_Flags: 8
+    m_Flags: 0
