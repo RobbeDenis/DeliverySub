@@ -3464,6 +3464,11 @@ Transform:
   - {fileID: 1120508511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1918745580 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8840336807974006169, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+  m_PrefabInstance: {fileID: 2138914812848003549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1966961042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5665422794947672339, guid: 2d96b93484625764c8e8651469575acc, type: 3}
@@ -3565,6 +3570,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Submarine
       objectReference: {fileID: 0}
+    - target: {fileID: 5340135372835556688, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: Body
+      value: 
+      objectReference: {fileID: 1918745580}
+    - target: {fileID: 5340135372835556688, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: TurnSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7332674993739146970, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3662,10 +3675,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoundingBox
       objectReference: {fileID: 0}
-    - target: {fileID: 7281738314115752012, guid: ff46f1f4a1c560649875342f2331935f, type: 3}
-      propertyPath: m_Size.y
-      value: 120
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3687,6 +3696,10 @@ PrefabInstance:
       propertyPath: Bounds
       value: 
       objectReference: {fileID: 138639263}
+    - target: {fileID: 4449883177464933952, guid: 103a353bebec57c47b160a74dc27a6cc, type: 3}
+      propertyPath: FollowSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4449883177464933952, guid: 103a353bebec57c47b160a74dc27a6cc, type: 3}
       propertyPath: TargetTransform
       value: 
@@ -3770,7 +3783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2549914584894248288, guid: cc3d0d12819dd4743ac23e327bce19ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61.8
+      value: 62.89
       objectReference: {fileID: 0}
     - target: {fileID: 2549914584894248288, guid: cc3d0d12819dd4743ac23e327bce19ae, type: 3}
       propertyPath: m_LocalPosition.z
