@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Camera
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3053137079
+    locked: 0
+  - name: BackForeground
+    uniqueID: 2551302247
     locked: 0
   - name: Default
     uniqueID: 0

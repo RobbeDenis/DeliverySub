@@ -41,7 +41,7 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""type"": ""Value"",
                     ""id"": ""ecec8376-a8e8-4d41-ba4d-98523848f2ea"",
                     ""expectedControlType"": ""Axis"",
-                    ""processors"": ""Clamp(max=1)"",
+                    ""processors"": ""Clamp(min=-1,max=1)"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 }
@@ -180,7 +180,7 @@ public partial class @SubmarineInputActions: IInputActionCollection2, IDisposabl
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""positive"",
+                    ""name"": ""Positive"",
                     ""id"": ""c9671480-a507-40ff-a504-4f8fbbfa8895"",
                     ""path"": ""<Mouse>/scroll/up"",
                     ""interactions"": """",
