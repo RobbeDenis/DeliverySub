@@ -3396,6 +3396,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1831877938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3500545510651762544, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+  m_PrefabInstance: {fileID: 2138914812848003549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831877942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831877938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6176dafd186ae478a6dbf9fae1aaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Body: {fileID: 1918745580}
+  MaxVelocity: 25
+  MaxAngle: 90
 --- !u!1 &1887812706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3566,6 +3586,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1181320396891881604, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181320396891881604, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181320396891881604, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5039901331903194158, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
       propertyPath: m_Name
       value: Submarine
@@ -3576,7 +3608,11 @@ PrefabInstance:
       objectReference: {fileID: 1918745580}
     - target: {fileID: 5340135372835556688, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
       propertyPath: TurnSpeed
-      value: 10
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5340135372835556688, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7332674993739146970, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3621,7 +3657,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3500545510651762544, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1831877942}
   m_SourcePrefab: {fileID: 100100000, guid: d98574fa9deab114ca099a8bebd1aec2, type: 3}
 --- !u!1001 &4321079246477816482
 PrefabInstance:
