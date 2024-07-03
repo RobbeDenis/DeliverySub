@@ -11,7 +11,10 @@ public class VelocityAutoTurn : MonoBehaviour
 
     private void Update()
     {
-        if(Body.velocity.x <= 0f)
+        if (Body.velocity == Vector2.zero)
+            return;
+
+        if (Body.velocity.x <= 0f)
             TargetScale = -1f;
         else
             TargetScale = 1f;

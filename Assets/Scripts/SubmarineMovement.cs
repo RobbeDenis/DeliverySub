@@ -45,7 +45,6 @@ public class SubmarineMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Air")
         {
-            Debug.Log("Out water");
             GoOutWater();
         }
     }
@@ -54,7 +53,6 @@ public class SubmarineMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Air")
         {
-            Debug.Log("In water");
             GoInWater();
         }
     }
